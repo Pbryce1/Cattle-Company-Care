@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <!--
+      JavaScript 6th Edition  v 1.16
+     
+
+      Individual Project Template
+  
+      Author: Paige Bryce
+      Date:   2-14-17
+
+      Filename: services.html
+   -->
+   <meta charset="utf-8" />
+   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+   <title>Individual Student Project Template 1</title>
+   <link rel="stylesheet" media="screen and (max-device-width: 999px)" href="project.css" />
+   <link rel="stylesheet" media="screen and (min-device-width: 1000px)" href="project.css" />
+ 
+   <link href="https://fonts.googleapis.com/css?family=Sansita" rel="stylesheet" type="text/css">
+   
+</head>
+
+<body>
+   <div id="container">
+      <header>
+         <h1>
+           <p>A happy bovine means a happy human!</p>
+         </h1>
+      </header>
+
+      <nav>
+         <ul>
+
+            <li id= "Home"><a href="/index.html">Home</a></li>
+            <li id="currentpage"><a href="#">Services</a></li>
+            <li id="Photos"><a href="/photos.html">Photos</a></li>
+            <li id= "Contact Us"><a href="/contact.html">Contact Us</a></li>      
+            <li id = "Security"><a href ="/security.html">Security</a></li>
+        </ul>
+      </nav>
+        
+      <article>
+         <h2>Our Services</h2>
+         <p> Our services include: Artificial insemination, vaccinations, medicine injections, castration, seasonal medical attention, pregnancy checks and care.</p>
+         <p> <img src="https://cdn.gomix.com/76fa5d3e-b5c8-43cc-b6db-c3874d862d8b%2Fvac.jpg"/></p>
+        <h3>How can we help you?</h3>
+        <p>
+           We charge an hourly rate for services, equipment rentals & medical supplies if requested.
+        </p>
+    <!-- had to add line breaks so that the check boxes would align with the services we provide and their prices-->
+        <form>           
+             <input type="checkbox" id="item1" value="15" />
+             <label for="item1">Examinations($15.00)</label>
+             <br>
+             <input type="checkbox" id="item2" value="17" />
+             <label for="item2">Reproductive($17.00)</label>
+             <br>
+             <input type="checkbox" id="item3" value="11" />
+             <label for="item3">Medical Vaccinations($11.00)</label>
+             <br>
+             <input type="checkbox" id="item4" value="10" />
+             <label for="item4">Rental Equipment($10.00)</label>
+             <br>
+             <input type="checkbox" id="item5" value="10" />
+             <label for="item5">Medical Supplies($10.00)</label>
+          
+             <input type="button" id="submit" value="Submit"/>
+             
+          </form>
+     <script src="script.js">
+          
+          //array storing services to display 
+          var services = ["Examinations($15.00)", "Reproductive($17.00)", "Medical Vaccinations($11.00)", "Rental Equipment($10.00)","Medical Supplies($10.00)"];
+          //create a matching array of the label elements 
+          var labels = document.getElementsByTagNames ("label");
+          //function to generate list from arrray 
+          function processServices () {
+            for (var i=0;i<5;i++) {
+            //write each array element to its corresponding label 
+            // OLD CODE : listItem = "item" + (i+1);
+              labels[i].innerHTML = services[i];
+            }
+          }
+
+          if (window.addEventListener){
+            window.addEventListener ("load", processServices, false);
+          } else if (window.attachEvent) { 
+          window.attachEvent ("onload", processServices);}
+
+     </script>
+<div>
+   <p id="total"></p>
+        </div>
+      </article>
+    
+      <footer>
+               <p>Convenient Cattle Care Co. &bull; Salisbury, Maryland</p>
+      </footer>
+   </div>
+</body>
+   <script src="script.js"></script>
+</html>

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <!--
+      JavaScript 6th Edition  v 1.16
+     
+
+      Individual Project Template
+  
+      Author: Paige Bryce
+      Date: 2/14/2017
+
+      Filename: index.html
+   -->
+   <meta charset="utf-8" />
+   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+   <title>Individual Student Project Template 1</title>
+   <link rel="stylesheet"  href="project.css" />
+   <link href="https://fonts.googleapis.com/css?family=Sansita" rel="stylesheet" type="text/css"> 
+</head>
+
+<body>
+   <div id="container">
+      <header>
+         <h1> 
+           <img src="https://cdn.gomix.com/76fa5d3e-b5c8-43cc-b6db-c3874d862d8b%2Fanor.jpg" alt="Happy Cow" title="HappyCow" />
+            CATTLE CARE COMPANY 
+                    </h1>
+      </header>
+
+	 <!--
+      The nav section (below) contains and unordered list <ul>.
+      Each individual page is listed as a separate line item <li>.
+      Note that the first two line items have been given a unique ID attribute value and an "href"
+      which is a hypertext reference.  You will need to create two additional .htm files and references 
+      for the other tabs to work.   
+	-->  
+	  <nav>
+ 
+	    <ul>
+            <li id="Home"><a href="/index.html">Home</a></li>
+            <li id="Services"><a href="/services.html">Services</a></li>
+            <li id="Photos"><a href="/photos.html">Photos</a></li>
+            <li id="Contact Us"><a href="/contact.html">Contact Us</a></li>      
+            <li id = "current page"><a href ="#">Security</a></li>      
+      </ul>
+      </nav>
+ 	 <!--
+      I made adjustments to the styling sheet in order to make the paragraphs double spaced, had to use the internet to figure out how.
+	-->         
+      <article>
+         <h2>Convenient Cattle Care Company</h2>
+         <p>web security  </p>
+         <p>more info </p>
+      </article>
+    <article> 
+      
+     <script>
+      
+    
+       // So i am really confused about what we need to do and can you please do a tutorial in class
+       // below are the 4 navigator / screen objective properties 
+
+    "use strict"; 
+    document.getElementsByTagName("p")[0].innerHTML =
+      "Web browser name: " + navigator.appName;
+    document.getElementsByTagName("p")[1].innerHTML =
+      "Web browser version: " + navigator.appVersion;
+    document.getElementsByTagName("p")[2].innerHTML =
+      "Operating platform: " + navigator.platform;
+    document.getElementsByTagName("p")[3].innerHTML =
+      "User agent: " + navigator.userAgent;
+  </script>
+     <p>
+      <a href="http://www.beyondsecurity.com/web-security-and-web-scanning.html">WEB SECURITY INFORMATION </a>
+    
+       </p>
+     </article>
+      <footer>
+         <p>Convenient Cattle Care Co. &bull; Salisbury, Maryland</p>
+      </footer>
+   </div>
+</body>
+</html>
